@@ -10,8 +10,7 @@ html, body {
   padding: 0;
   box-sizing: border-box;
 }
-/* ====== RESET & BASE ====== */
-* {margin: 0; padding: 0; box-sizing: border-box;}
+
 body {
   font-family: "Poppins", sans-serif;
   background: #e2c8c8;
@@ -19,10 +18,11 @@ body {
   line-height: 1.6;
   scroll-behavior: smooth;
 }
-/* HEADER PAGE */
+
 a {text-decoration: none; color: inherit;}
-    h1, h2, h3 {font-weight: 600;}
-    section {padding: 80px 10%;}
+h1, h2, h3 {font-weight: 600;}
+section {padding: 80px 10%;}
+
 /* ====== HEADER ====== */
 header {
   position: fixed;
@@ -37,7 +37,7 @@ header {
   box-shadow: 0 2px 8px rgba(0,0,0,0.2);
 }
 header h1 {font-size: 20px;}
-/* ====== NAVIGATION ====== */
+
 nav a {
   margin-left: 20px;
   font-size: 15px;
@@ -45,6 +45,7 @@ nav a {
   color: #fff;
 }
 nav a:hover {color: #fdd85d;}
+
 /* ====== HERO SECTION ====== */
 .hero {
   position: relative;
@@ -58,7 +59,6 @@ nav a:hover {color: #fdd85d;}
   overflow: hidden;
 }
 
-/* ====== BACKGROUND SHAPES ====== */
 .bg-shape {
   position: absolute;
   width: 300px;
@@ -68,44 +68,26 @@ nav a:hover {color: #fdd85d;}
   opacity: 0.5;
   animation: float 5s ease-in-out infinite;
 }
-/* ====== 3 hình tròn ở trang đầu ====== */
-.shape1 {
-  top: -50px;
-  left: -80px;
-  animation-delay: 0s;
-}
-.shape2 {
-  bottom: 40px;
-  right: -80px;
-  animation-delay: 2s;
-}
-.shape3 {
-  top: 100px;
-  right: 200px;
-  animation-delay: 4s;
-}
 
-.shape4 {
-  top: 300px;
-  left: 150px;
-  animation-delay: 1s;
-}
+.shape1 {top: -50px; left: -80px; animation-delay: 0s;}
+.shape2 {bottom: 40px; right: -80px; animation-delay: 2s;}
+.shape3 {top: 100px; right: 200px; animation-delay: 4s;}
+.shape4 {top: 300px; left: 150px; animation-delay: 1s;}
 
 @keyframes float {
   0%, 100% { transform: translateY(0) rotate(0deg); }
   50% { transform: translateY(-30px) rotate(10deg); }
 }
 
-/* ====== chữ tên trang đầu tiên ====== */
 .hero-name {
   font-size: 23px;
   letter-spacing: 3px;
   color: #070606;
   margin-bottom: 20px;
   position: absolute;
-  top : 17%;
+  top: 17%;
 }
-/* ====== cấu hình chữ portpolio ====== */
+
 .main-title {
   font-size: 120px;
   font-weight: 900;
@@ -114,12 +96,12 @@ nav a:hover {color: #fdd85d;}
   text-shadow: 6px 6px 0 #222;
   position: relative;
   z-index: 1;
-  top : -20%;
+  top: -20%;
 }
-/* ====== cấu hình tên ngành trang đầu tiên ====== */
+
 .label {
   position: absolute;
-  top: 50%;
+  top: 30%;
   right: 30%;
   background: #db5757;
   color: #000;
@@ -127,51 +109,29 @@ nav a:hover {color: #fdd85d;}
   padding: 6px 16px;
   border-radius: 6px;
   border: 2px solid #000;
-  /* transform: rotate(-15deg); */
   box-shadow: 4px 4px 0 #000;
   z-index: 2;
-  top : 30%;
 }
 
-/* ====== IMAGE đã xóa nền ====== */
 .hero-img {
   position: absolute;
   bottom: 0;
   width: 400px;
   z-index: 5;
   filter: drop-shadow(0 50px 60px rgba(0,0,0,0.2));
-}
-
-/* ====== IMAGE đã xóa nền dịch chuyển ====== */
-.hero-img {
-  position: absolute;
-  bottom: 0;
-  width: 400px;
-  z-index: 5;
-  filter: drop-shadow(0 50px 60px rgba(0,0,0,0.2));
-
   opacity: 0;
   transform: translateY(80px) scale(0.9);
   animation: popIn 1.2s ease-out forwards;
-  animation-delay: 0.5s; /* bắt đầu sau 0.5s khi trang load */
+  animation-delay: 0.5s;
 }
 
 @keyframes popIn {
-  0% {
-    opacity: 0;
-    transform: translateY(80px) scale(0.9);
-  }
-  60% {
-    opacity: 1;
-    transform: translateY(-10px) scale(1.03);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0) scale(1);
-  }
+  0% { opacity: 0; transform: translateY(80px) scale(0.9); }
+  60% { opacity: 1; transform: translateY(-10px) scale(1.03); }
+  100% { opacity: 1; transform: translateY(0) scale(1); }
 }
-/* ====== PAGE GIỚI THIỆU (từ style.css) ====== */
 
+/* ====== ABOUT PAGE ====== */
 .about-page .main {
   display: flex;
   width: 100%;
@@ -180,9 +140,9 @@ nav a:hover {color: #fdd85d;}
   box-shadow: 0 4px 12px rgba(0,0,0,0.1);
   overflow: hidden;
   justify-content: space-between;
-  min-height: 90vh; 
+  min-height: 90vh;
 }
-/* ====== Cột bên trái hiển thị tên và ảnh đại diện ====== */
+
 .about-page .left {
   width: 35%;
   background: linear-gradient(180deg, #f3efef 0%, #f9f9f9 100%);
@@ -191,42 +151,42 @@ nav a:hover {color: #fdd85d;}
   flex-direction: column;
   align-items: center;
 }
-/* ====== cấu hình ảnh đại diện trong cột bên trái ====== */
+
 .about-page .avatar {
-  width: 160px;
-  height: 200px;
+  width: 180px;
+  height: 220px;
   border-radius: 8px;
   object-fit: cover;
   margin-bottom: 20px;
   z-index: 1;
 }
-/* ====== Bông hoa ====== */
+
 .about-page .flower-spin {
-  position: absolute;    /* định vị tự do */
-  bottom: -220px;          /* neo cách đáy của khung left 20px */
-  left: 10%;             /* canh giữa theo chiều ngang */
+  position: absolute;
+  bottom: -220px;
+  left: 10%;
   transform: translateX(-50%) rotate(0deg);
-  width: 150px;                  /* to hơn một chút */
+  width: 150px;
   height: 150px;
-  margin-top: -40px;             /* kéo hoa sát dưới avatar */
-  opacity: 0.7;                 /* làm mờ */
-  filter: blur(0.5px);           /* làm mờ nhẹ */
-  animation: rotateFlower 20s linear infinite; /* xoay chậm */
-  pointer-events: none;          /* tránh ảnh hưởng khi hover */ 
+  margin-top: -40px;
+  opacity: 0.7;
+  filter: blur(0.5px);
+  animation: rotateFlower 20s linear infinite;
+  pointer-events: none;
   z-index: 0;
 }
-/* ====== Bông hoa xoay ====== */
+
 @keyframes rotateFlower {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
 }
-/* ====== cấu hình chữ Im Ninh ====== */
+
 .about-page .left h1 {
   font-size: 28px;
   font-weight: 700;
   margin-bottom: 20px;
 }
-/* ====== cấu hình chữ vắn tắt bên dưới tên Hi im Ninh ====== */
+
 .about-page .intro {
   font-size: 14px;
   line-height: 1.6;
@@ -234,7 +194,7 @@ nav a:hover {color: #fdd85d;}
   color: #444;
   margin-bottom: 25px;
 }
-/* ====== cấu hình box liên hệ bên trong cột trái ====== */
+
 .about-page .contact {
   background: #6a88ec;
   border-radius: 10px;
@@ -242,7 +202,7 @@ nav a:hover {color: #fdd85d;}
   width: 100%;
   box-shadow: 0 2px 6px rgba(0,0,0,0.1);
 }
-/* ====== cấu hình chữ liên hệ ====== */
+
 .about-page .contact h3 {
   font-size: 15px;
   margin-bottom: 8px;
@@ -256,7 +216,7 @@ nav a:hover {color: #fdd85d;}
   font-size: 14px;
   line-height: 1.6;
 }
-/* ====== cấu hình cột bên phải ====== */
+
 .about-page .right {
   width: 65%;
   padding: 40px 50px;
@@ -265,27 +225,27 @@ nav a:hover {color: #fdd85d;}
   gap: 25px;
   background: #fff;
 }
-/* ====== cấu hình màu các box bên trong cột phải ====== */
+
 .about-page .box {
-  border: 1px solid #ca1f1f; /* màu các box bên trong cột phải */
+  border: 1px solid #ca1f1f;
   border-radius: 12px;
   padding: 20px;
   background: #fff;
   box-shadow: 0 2px 6px rgba(0,0,0,0.05);
 }
-/* ====== cấu hình các thẻ h2 các box bên trong cột phải ====== */
+
 .about-page .box h2 {
   font-size: 16px;
   font-weight: 700;
   margin-bottom: 15px;
   background-color: #474545;
-  color: #fff; /* cấu hình màu các chữ như học vấn bên trong các box */
+  color: #fff;
   display: inline-block;
   padding: 8px 14px;
   border-radius: 10px;
   box-shadow: 0 2px 5px rgba(0,0,0,0.2);
 }
-/* ====== cấu hình box phần mềm bên trong cột bên phải ====== */
+
 .about-page .software {
   display: flex;
   align-items: center;
@@ -293,19 +253,19 @@ nav a:hover {color: #fdd85d;}
   flex-wrap: wrap;
   margin-top: 10px;
 }
-/* ====== cấu hình hình ảnh các phần mềm bên trong box phần mềm ====== */
+
 .about-page .software img {
   width: 80px;
   height: 80px;
 }
-/* ====== cấu hình box kỹ năng bên trong cột bên phải ====== */
+
 .about-page .skills {
   display: flex;
   flex-wrap: wrap;
   gap: 8px;
   margin-top: 10px;
 }
-/* ====== cấu hình các kỹ năng bên trong box kỹ năng ====== */
+
 .about-page .skills span {
   background: #f3f3f3;
   border: 1px solid #ccc;
@@ -314,41 +274,41 @@ nav a:hover {color: #fdd85d;}
   font-size: 13px;
 }
 
-/* ====== Cấu hình các SECTIONS  ====== */
 section h2 {
-  color: #0d0e0d; /* màu chữ các sections */
+  color: #0d0e0d;
   margin-bottom: 20px;
   border-left: 5px solid #fdd85d;
   padding-left: 10px;
 }
 
-/* ====== ABOUT ====== */
 .about p {max-width: 800px; margin-bottom: 20px;}
 
-/* ====== EDUCATION ====== */
 .edu-item {margin-bottom: 15px;}
 .edu-item h3 {color: #13315c;}
 .edu-item p {color: #555;}
 
-/* ====== SKILLS ====== */
 .skills-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 15px;
 }
+
 .skill-box {
   background: #fff;
   padding: 15px;
   border-radius: 8px;
   box-shadow: 0 2px 8px rgba(0,0,0,0.08);
 }
+
 .skill-box h4 {margin-bottom: 10px;}
+
 .bar {
   height: 8px;
   background: #e0e0e0;
   border-radius: 4px;
   overflow: hidden;
 }
+
 .bar span {
   display: block;
   height: 100%;
@@ -357,7 +317,7 @@ section h2 {
 
 /* ===== BLOG SECTION ===== */
 .blog-section {
-  min-height: 100dvh; /* Tự co theo màn hình thực tế, hỗ trợ iPhone */
+  min-height: 100dvh;
   width: 100%;
   color: #fff;
   background-color: #f4c8c8;
@@ -365,24 +325,26 @@ section h2 {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 80px 0;
+  padding: 80px 5%;
   position: relative;
-  overflow: visible; /* Cho phép hiển thị đầy đủ các hình bình hành */
+  overflow: visible;
 }
-
 
 .blog-section h2 {
   font-size: 2.3rem;
   margin-bottom: 60px;
   letter-spacing: 1px;
+  color: #070606;
 }
 
-/* 4 hình bình hành xếp ngang */
 .blog-container {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 15px;
+  flex-wrap: nowrap;
+  max-width: 1600px;
+  width: 100%;
 }
 
 .blog-item {
@@ -400,7 +362,6 @@ section h2 {
   transform: scale(1.05);
 }
 
-/* Ảnh nền trong hình bình hành */
 .blog-img {
   position: absolute;
   inset: 0;
@@ -415,7 +376,6 @@ section h2 {
   filter: brightness(95%);
 }
 
-/* Lớp nội dung */
 .blog-inner {
   position: absolute;
   bottom: 20px;
@@ -437,7 +397,6 @@ section h2 {
   opacity: 0.9;
 }
 
-/* Popup chi tiết bài viết */
 .blog-detail {
   position: fixed;
   top: 50%;
@@ -451,7 +410,7 @@ section h2 {
   border-radius: 15px;
   box-shadow: 0 0 30px rgba(0,0,0,0.4);
   opacity: 0;
-  pointer-events: none; /* chặn khi ẩn */
+  pointer-events: none;
   transition: all 0.3s ease;
   z-index: 1000;
 }
@@ -459,7 +418,7 @@ section h2 {
 .blog-detail.active {
   opacity: 1;
   transform: translate(-50%, -50%) scale(1);
-  pointer-events: auto; /* bật click */
+  pointer-events: auto;
 }
 
 .blog-detail .close-btn {
@@ -470,32 +429,31 @@ section h2 {
   cursor: pointer;
   color: #666;
 }
+
 .blog-detail .close-btn:hover {
   color: #000;
 }
 
-
 /* ====== CONTACT ====== */
 .contact {
   text-align: center;
-  background: #9495be; /* Màu nền tối giống ảnh */
+  background: #9495be;
   color: #fff;
   padding: 60px 10%;
   position: relative;
   overflow: hidden;
 }
 
-/* Tiêu đề với hiệu ứng typing */
 .typing-text {
   font-size: 48px;
   font-weight: bold;
   margin: 30px 0;
-  min-height: 80px; /* Giữ chiều cao cố định */
+  min-height: 80px;
   display: flex;
   align-items: center;
   justify-content: center;
-  border: none; /* Thêm dòng này */
-  border-left: none; /* Thêm dòng này */
+  border: none;
+  border-left: none;
 }
 
 .text-line {
@@ -517,7 +475,6 @@ section h2 {
   51%, 100% { opacity: 0; }
 }
 
-/* Social icons */
 .social-icons {
   display: flex;
   justify-content: center;
@@ -549,16 +506,15 @@ section h2 {
   transform: translateY(-5px);
 }
 
-/* ====== Project ====== */
+/* ====== PROJECT CAROUSEL ====== */
 .carousel-section {
   text-align: center;
   padding: 100px 10%;
-  /* background: linear-gradient(135deg, #1a1919 0%, #c443cf 100%); */
   perspective: 1200px;
   position: relative;
   overflow: hidden;
 }
-/* ====== cấu hình title Dự án của tôi ====== */
+
 .carousel-section h2 {
   color: #070606;
   font-size: 42px;
@@ -567,7 +523,7 @@ section h2 {
   border: none;
   padding: 0;
 }
-/* ====== container dự án ====== */
+
 .carousel-container {
   position: relative;
   width: 90%;
@@ -595,7 +551,7 @@ section h2 {
   min-height: 600px;
   transform-style: preserve-3d;
 }
-/* ====== hiển thị các thẻ dự án ====== */
+
 .project-card {
   position: absolute;
   left: 50%;
@@ -614,36 +570,36 @@ section h2 {
   border: 1px solid rgba(255, 255, 255, 0.1);
   cursor: pointer;
 }
-/* ====== hiển thị dự án ẩn phía sau mờ hơn 50% nếu là không active ====== */
+
 .project-card:hover:not(.active) {
   opacity: 0.5;
   transform: translateX(-50%) scale(0.78) translateZ(-140px);
 }
-/* ====== hiển thị dự án active rõ phía trước chính giữa ====== */
+
 .project-card.active {
   transform: translateX(-50%) scale(1) translateZ(100px);
   opacity: 1;
   z-index: 10;
   box-shadow: 0 30px 80px rgba(139, 102, 255, 0.3);
 }
-/* ====== hiển thị dự án non active phía 2 bên mờ ====== */
+
 .project-card.left {
   transform: translateX(calc(-50% - 350px)) rotateY(35deg) scale(0.7) translateZ(-100px);
   opacity: 0.4;
 }
-/* ====== hiển thị dự án non active phía 2 bên mờ ====== */
+
 .project-card.right {
   transform: translateX(calc(-50% + 350px)) rotateY(-35deg) scale(0.7) translateZ(-100px);
   opacity: 0.4;
 }
-/* ====== cấu hình chữ tên dự án ====== */
+
 .project-card h3 {
   color: #fff;
   font-size: 24px;
   margin: 15px 0 10px;
   font-weight: 600;
 }
-/* ====== cấu hình mô tả dự án bên dưới tên dự án ====== */
+
 .project-card p {
   color: rgba(255, 255, 255, 0.7);
   font-size: 14px;
@@ -651,7 +607,7 @@ section h2 {
   margin-bottom: 20px;
   min-height: 60px;
 }
-/* ====== button view chi tiết project ====== */
+
 .view-btn {
   background: linear-gradient(135deg, #908f94, #a855f7);
   color: #fff;
@@ -664,13 +620,12 @@ section h2 {
   transition: all 0.3s ease;
   box-shadow: 0 4px 15px rgba(139, 102, 255, 0.4);
 }
-/* ====== hiệu ứng khi chỏ chuột buttun xem tiết project ====== */
+
 .view-btn:hover {
   transform: translateY(-2px);
   box-shadow: 0 6px 20px rgba(139, 102, 255, 0.6);
 }
 
-/* ====== Button click next project ====== */
 .carousel-btn {
   position: absolute;
   top: 50%;
@@ -680,7 +635,7 @@ section h2 {
   width: 60px;
   height: 60px;
   border-radius: 50%;
-  color: white; 
+  color: white;
   cursor: pointer;
   transition: all 0.3s ease;
   z-index: 50;
@@ -699,47 +654,121 @@ section h2 {
 .carousel-btn.prev { left: -80px; }
 .carousel-btn.next { right: -80px; }
 
-/* ====== màu tối xung quanh box view chi tiết dự án ====== */
+/* ====== MODAL PROJECT DETAIL ====== */
 .modal {
   display: none;
   position: fixed;
-  z-index: 1000;
+  z-index: 10000;
   left: 0;
   top: 0;
   width: 100%;
   height: 100%;
-  background: rgba(17, 17, 17, 0.8);
+  background: rgba(17, 17, 17, 0.95);
   justify-content: center;
   align-items: center;
+  padding: 40px 20px;
+  overflow-y: auto;
 }
-/* ====== View box chi tiết dự án ====== */
+
 .modal-content {
-  background: #01050f;
-  padding: 40px;
+  background: linear-gradient(135deg, #1a1f35 0%, #0f1419 100%);
+  padding: 70px 40px 40px 40px;
   border-radius: 20px;
-  max-width: 800px;
+  max-width: 900px;
   width: 90%;
+  max-height: 80vh;
+  overflow-y: auto;
   color: #fff;
   position: relative;
+  margin: auto;
+  box-shadow: 0 10px 50px rgba(0, 0, 0, 0.5);
+  border: 1px solid rgba(255, 255, 255, 0.1);
 }
-/* ====== button click close view chi tiết dự án ====== */
-.close-btn {
-  position: absolute;
-  top: 15px;
-  right: 25px;
-  font-size: 35px;
-  cursor: pointer;
-  color: #ffffff;
-  transition: 0.3s;
+
+.modal-content::-webkit-scrollbar {
+  width: 10px;
 }
-/* ====== màu khi chỏ chuột vào nut close view chi tiết dự án ====== */
-.close-btn:hover {
-  color: #e0230a;
+
+.modal-content::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 10px;
+}
+
+.modal-content::-webkit-scrollbar-thumb {
+  background: rgba(168, 85, 247, 0.6);
+  border-radius: 10px;
+}
+
+.modal-content::-webkit-scrollbar-thumb:hover {
+  background: rgba(168, 85, 247, 0.8);
+}
+
+#project-detail h2 {
+  color: #a855f7;
+  font-size: 28px;
+  margin-bottom: 20px;
+  padding-bottom: 15px;
+  border-bottom: 2px solid rgba(168, 85, 247, 0.3);
+  line-height: 1.4;
+}
+
+#project-detail p {
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 15px;
+  line-height: 1.8;
+  margin-bottom: 15px;
+  white-space: pre-line;
+}
+
+.modal-content .close-btn {
+  position: absolute !important;
+  top: 15px !important;
+  right: 15px !important;
+  font-size: 40px !important;
+  cursor: pointer !important;
+  color: #ffffff !important;
+  transition: all 0.3s !important;
+  background: rgba(168, 85, 247, 0.3) !important;
+  width: 50px !important;
+  height: 50px !important;
+  border-radius: 50% !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  line-height: 1 !important;
+  z-index: 10001 !important;
+  backdrop-filter: blur(10px) !important;
+  border: 2px solid rgba(255, 255, 255, 0.3) !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.modal-content .close-btn:hover {
+  color: #ff4444 !important;
+  background: rgba(255, 68, 68, 0.3) !important;
+  border-color: #ff4444 !important;
+  transform: rotate(90deg) !important;
 }
 
 /* ====== RESPONSIVE DESIGN ====== */
+@media (min-width: 1440px) {
+  .about-page .main {
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+  
+  .carousel-section {
+    max-width: 1600px;
+    margin: 0 auto;
+  }
+}
 
-/* ====== Màn hình nhỏ hơn 1024px (tablet & mobile landscape) ====== */
+@media (max-width: 1440px) {
+  section {
+    padding: 60px 8%;
+  }
+}
+
 @media (max-width: 1024px) {
   .main-title {
     font-size: 80px;
@@ -754,16 +783,80 @@ section h2 {
   .label {
     top: 30%;
     right: 20%;
-    /* transform: rotate(-10deg); */
+  }
+
+  .about-page .main {
+    flex-direction: column;
+  }
+
+  .about-page .left,
+  .about-page .right {
+    width: 100%;
+  }
+
+  .about-page .left {
+    padding: 30px;
+  }
+
+  .about-page .right {
+    padding: 30px;
+    grid-template-columns: 1fr;
+  }
+
+  .carousel-btn.prev { left: -60px; }
+  .carousel-btn.next { right: -60px; }
+
+  .project-card {
+    width: 400px;
+    height: 500px;
+  }
+
+  .modal-content {
+    padding: 60px 35px 35px 35px;
+    width: 92%;
+    max-height: 85vh;
+  }
+
+  .modal-content .close-btn {
+    width: 45px !important;
+    height: 45px !important;
+    font-size: 36px !important;
+  }
+
+  /* Blog responsive cho tablet */
+  .blog-container {
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+
+  .blog-item {
+    width: 48%;
+    max-width: 350px;
+    height: 500px;
   }
 }
 
-/* ====== Màn hình nhỏ hơn 768px (điện thoại đứng) ====== */
 @media (max-width: 768px) {
   header {
     flex-direction: column;
     text-align: center;
     padding: 10px 5%;
+  }
+
+  nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 10px;
+  }
+
+  nav a {
+    margin-left: 0;
+    font-size: 13px;
+    padding: 5px 10px;
+    background: rgba(255,255,255,0.1);
+    border-radius: 5px;
   }
 
   .main-title {
@@ -773,83 +866,420 @@ section h2 {
   }
 
   .hero-name {
-    font-size: 18px;
-    top: 30%;
+    font-size: 14px;
+    top: 28%;
   }
 
-  .hero {
-    padding: 0 5%;
+  .label {
+    top: 40%;
+    right: 5%;
+    padding: 4px 10px;
+    font-size: 10px;
   }
 
   .hero-img {
     width: 200px;
-    position: relative;
-    margin-top: 20px;
-    animation-delay: 0.3s;
+    bottom: -40px;
   }
 
-  .label {
-    top: 40%;
-    right: 15%;
-    padding: 4px 10px;
+  .about-page .main {
+    border-radius: 10px;
+  }
+
+  .about-page .left {
+    padding: 20px;
+  }
+
+  .about-page .left h1 {
+    font-size: 22px;
+  }
+
+  .about-page .intro {
+    font-size: 13px;
+  }
+
+  .about-page .avatar {
+    width: 120px;
+    height: 160px;
+  }
+
+  .about-page .flower-spin {
+    width: 100px;
+    height: 100px;
+    bottom: -160px;
+  }
+
+  .about-page .right {
+    padding: 20px;
+  }
+
+  .about-page .box h2 {
+    font-size: 14px;
+    padding: 6px 12px;
+  }
+
+  .about-page .box ul li {
     font-size: 12px;
   }
 
-  .nav-links {
-    flex-wrap: wrap;
+  .about-page .software {
     gap: 10px;
-    justify-content: center;
   }
-}
 
-/* ====== Màn hình siêu nhỏ (điện thoại rất nhỏ) ====== */
-@media (max-width: 480px) {
-  .main-title {
-    top: 16%;
-    font-size: 25px;
+  .about-page .software img {
+    width: 50px;
+    height: 50px;
   }
-  .hero-name {
+
+  .about-page .skills span {
+    font-size: 11px;
+    padding: 5px 10px;
+  }
+
+  section {
+    padding: 50px 5%;
+  }
+
+  section h2 {
+    font-size: 22px;
+    margin-bottom: 15px;
+  }
+
+  .edu-item h3 {
     font-size: 16px;
-    top: 22%;
   }
-  .label {
-    top: 40%;
-    right: -10%;
-    padding: 4px 10px;
+
+  .edu-item p {
+    font-size: 13px;
+  }
+
+  .skill-box h4 {
+    font-size: 14px;
+  }
+
+  .carousel-section {
+    padding: 50px 3%;
+    perspective: 800px;
+  }
+
+  .carousel-section h2 {
+    font-size: 24px;
+    margin-bottom: 30px;
+  }
+
+  .carousel-container {
+    width: 100%;
+    padding: 0;
+  }
+
+  .carousel-track {
+    min-height: 420px;
+  }
+
+  .project-card {
+    width: 280px;
+    height: 400px;
+    padding: 18px;
+  }
+
+  .project-card img {
+    width: 80px;
+    height: 80px;
+  }
+
+  .project-card h3 {
+    font-size: 18px;
+    margin: 12px 0 8px;
+  }
+
+  .project-card p {
     font-size: 12px;
+    min-height: 50px;
   }
-  .hero-img {
-    width: 250px;
-    bottom: -70px;
+
+  .view-btn {
+    padding: 10px 24px;
+    font-size: 13px;
   }
-}
-/* BLOG RESPONSIVE FIXED for small screens */
-/* ==== RESPONSIVE FIX ==== */
-@media (max-width: 1024px) {
+
+  .carousel-btn {
+    width: 40px;
+    height: 40px;
+    font-size: 18px;
+  }
+
+  .carousel-btn.prev { left: -15px; }
+  .carousel-btn.next { right: -15px; }
+
+  .project-card.active {
+    transform: translateX(-50%) scale(0.95) translateZ(50px);
+  }
+
+  .project-card.left {
+    transform: translateX(calc(-50% - 150px)) rotateY(30deg) scale(0.5) translateZ(-80px);
+    opacity: 0.3;
+  }
+
+  .project-card.right {
+    transform: translateX(calc(-50% + 150px)) rotateY(-30deg) scale(0.5) translateZ(-80px);
+    opacity: 0.3;
+  }
+
+  .modal {
+    padding: 15px 10px;
+  }
+
+  .modal-content {
+    padding: 50px 20px 20px 20px;
+    width: 98%;
+    max-height: 90vh;
+  }
+
+  .modal-content .close-btn {
+    top: 10px !important;
+    right: 10px !important;
+    width: 40px !important;
+    height: 40px !important;
+    font-size: 30px !important;
+  }
+
+  #project-detail h2 {
+    font-size: 19px;
+    margin-bottom: 12px;
+  }
+
+  #project-detail p {
+    font-size: 13px;
+    line-height: 1.6;
+  }
+
+  /* Blog responsive cho mobile */
   .blog-section {
-    height: auto;
-    min-height: 100dvh;
-    padding: 60px 5%;
-    overflow: visible;
+    padding: 50px 4%;
+    min-height: auto;
+  }
+
+  .blog-section h2 {
+    font-size: 1.8rem;
+    margin-bottom: 35px;
   }
 
   .blog-container {
     flex-direction: column;
-    align-items: center;
-    gap: 60px;
+    gap: 20px;
   }
 
   .blog-item {
-    width: 70%;
-    max-width: 300px;
-    height: 350px;
+    width: 95%;
+    max-width: 320px;
+    height: 420px;
+    clip-path: polygon(8% 0%, 100% 0%, 92% 100%, 0% 100%);
+  }
+
+  .blog-inner {
+    bottom: 20px;
+    left: 20px;
+    right: 20px;
+  }
+
+  .blog-inner h3 {
+    font-size: 1.1rem;
+    margin-bottom: 6px;
+  }
+
+  .blog-inner p {
+    font-size: 0.85rem;
+    line-height: 1.3;
+  }
+
+  .blog-detail {
+    padding: 30px 20px;
+    width: 92%;
+    max-width: 500px;
+  }
+
+  .blog-detail h3 {
+    font-size: 1.4rem;
+    margin-bottom: 15px;
+  }
+
+  .blog-detail p {
+    font-size: 0.95rem;
+    line-height: 1.6;
+  }
+
+  .blog-detail .close-btn {
+    font-size: 30px;
+    top: 12px;
+    right: 18px;
+  }
+
+  .contact {
+    padding: 50px 5%;
+  }
+
+  .typing-text {
+    font-size: 24px;
+    min-height: 50px;
+  }
+
+  .social-icons {
+    gap: 12px;
+    flex-wrap: wrap;
+  }
+
+  .social-icons a {
+    width: 40px;
+    height: 40px;
+    font-size: 18px;
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 480px) {
+  header {
+    padding: 8px 3%;
+  }
+
+  header h1 {
+    font-size: 16px;
+  }
+
+  nav a {
+    font-size: 11px;
+    padding: 4px 8px;
+  }
+
+  .main-title {
+    font-size: 32px;
+    top: 18%;
+  }
+
+  .hero-name {
+    font-size: 18px;
+    top: 25%;
+  }
+
+  .hero-img {
+    width: 250px;
+    bottom: -20px;
+  }
+
+  .label {
+    top: 35%;
+    right: 10%;
+    padding: 5px 12px;
+    font-size: 11px;
+  }
+
+  .about-page .left {
+    padding: 25px;
+  }
+
+  .about-page .avatar {
+    width: 140px;
+    height: 180px;
+  }
+
+  .about-page .flower-spin {
+    width: 120px;
+    height: 120px;
+    bottom: -180px;
+  }
+
+  .about-page .right {
+    padding: 25px;
+  }
+
+  .about-page .box {
+    padding: 15px;
+  }
+
+  .about-page .software img {
+    width: 60px;
+    height: 60px;
+  }
+
+  .carousel-section {
+    padding: 60px 5%;
+  }
+
+  .carousel-section h2 {
+    font-size: 32px;
+    margin-bottom: 40px;
+  }
+
+  .carousel-container {
+    width: 100%;
+  }
+
+  .carousel-track {
+    min-height: 500px;
+  }
+
+  .project-card {
+    width: 320px;
+    height: 450px;
+    padding: 20px;
+  }
+
+  .project-card h3 {
+    font-size: 20px;
+  }
+
+  .project-card p {
+    font-size: 13px;
+  }
+
+  .carousel-btn {
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+  }
+
+  .carousel-btn.prev { left: -25px; }
+  .carousel-btn.next { right: -25px; }
+
+  .project-card.left {
+    transform: translateX(calc(-50% - 200px)) rotateY(35deg) scale(0.6) translateZ(-100px);
+  }
+
+  .project-card.right {
+    transform: translateX(calc(-50% + 200px)) rotateY(-35deg) scale(0.6) translateZ(-100px);
+  }
+
+  .modal {
+    padding: 20px 15px;
+  }
+
+  .modal-content {
+    padding: 55px 25px 25px 25px;
+    width: 95%;
+    max-height: 88vh;
+  }
+
+  .modal-content .close-btn {
+    top: 12px !important;
+    right: 12px !important;
+    width: 42px !important;
+    height: 42px !important;
+    font-size: 34px !important;
+  }
+
+  #project-detail h2 {
+    font-size: 22px;
+  }
+
+  #project-detail p {
+    font-size: 14px;
+  }
+
   .blog-section {
-    height: auto;
-    padding: 50px 4%;
+    padding: 60px 5%;
+  }
+
+  .blog-section h2 {
+    font-size: 2rem;
+    margin-bottom: 40px;
   }
 
   .blog-container {
@@ -860,28 +1290,62 @@ section h2 {
 
   .blog-item {
     width: 90%;
-    max-width: 330px;
-    height: 420px;
+    max-width: 350px;
+    height: 450px;
     clip-path: polygon(10% 0%, 100% 0%, 90% 100%, 0% 100%);
   }
 
+  .blog-inner {
+    bottom: 25px;
+    left: 25px;
+    right: 25px;
+  }
+
   .blog-inner h3 {
-    font-size: 1rem;
+    font-size: 1.2rem;
+    margin-bottom: 8px;
   }
 
   .blog-inner p {
-    font-size: 0.85rem;
+    font-size: 0.95rem;
+    line-height: 1.4;
+  }
+
+  .typing-text {
+    font-size: 32px;
+    min-height: 60px;
+  }
+
+  .social-icons a {
+    width: 45px;
+    height: 45px;
+    font-size: 20px;
   }
 }
 
-@media (max-width: 480px) {
-  .blog-item {
-    width: 95%;
-    height: 360px;
+@media (max-width: 375px) {
+  .main-title {
+    font-size: 28px;
   }
 
-  .blog-section h2 {
-    font-size: 1.6rem;
-    margin-bottom: 40px;
+  .hero-name {
+    font-size: 12px;
+  }
+
+  .hero-img {
+    width: 180px;
+  }
+
+  .project-card {
+    width: 260px;
+    height: 380px;
+  }
+
+  .blog-item {
+    height: 350px;
+  }
+
+  .typing-text {
+    font-size: 20px;
   }
 }

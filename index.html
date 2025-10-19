@@ -15,8 +15,8 @@
     <nav>
       <a href="#hero">Trang chủ</a>
       <a href="#about">Giới thiệu</a>
-      <a href="#education">Học vấn</a>
-      <a href="#skills">Kỹ năng</a>
+      <!-- <a href="#education">Học vấn</a> -->
+      <!-- <a href="#skills">Kỹ năng</a> -->
       <a href="#projects">Dự án</a>
       <a href="#blog">Bài viết</a>
       <a href="#contact">Liên hệ</a>
@@ -58,12 +58,10 @@
             Với tinh thần cầu tiến và khả năng thích nghi cao, tôi mong muốn mang lại giá trị cho doanh nghiệp thông qua tư duy phân tích và sáng tạo.
           </p>
           <div class="contact">
-            <h3>LIÊN HỆ</h3>
+            <h3>Liên hệ</h3>
             <ul>
               <li>📞 0374379332</li>
-              <li>📧 thuyninh2k3</li>
-              <li>📷 @imninh</li>
-              <li>🔗 /imninh</li>
+              <li>🏠 Yên Dương - Phú Thọ</li>
             </ul>
           </div>
         </div>
@@ -118,7 +116,7 @@
   </section>
 
   <!-- EDUCATION -->
-  <section id="education" class="education">
+  <!-- <section id="education" class="education">
     <h2>Học vấn & Chứng chỉ</h2>
     <div class="edu-item">
       <h3>Đại học Kinh tế - Đại học Quốc Gia Hà Nội – Cử nhân Quản trị Kinh doanh</h3>
@@ -126,10 +124,10 @@
       <p>Tốt nghiệp xuất sắc - CPA: 3.75</p>
       <p>Khóa học tiêu biểu: Marketing chiến lược, Quản trị dự án, Phân tích dữ liệu kinh doanh.</p>
     </div>
-  </section>
+  </section> -->
 
   <!-- SKILLS -->
-  <section id="skills" class="skills">
+  <!-- <section id="skills" class="skills">
     <h2>Kỹ năng</h2>
     <div class="skills-grid">
       <div class="skill-box">
@@ -149,7 +147,7 @@
         <div class="bar"><span style="width:90%"></span></div>
       </div>
     </div>
-  </section>
+  </section> -->
 
   <!-- PROJECTS -->
   <!-- ====== PROJECT CAROUSEL (Dự án của tôi) ====== -->
@@ -163,35 +161,41 @@
     <div class="carousel-track">
         <div class="project-card active">
         <img src="./imgs/excel_logo.png" alt="Project 1">
-        <h3>Dự án 1</h3>
-        <p>Mô tả ngắn gọn về dự án này, thể hiện các công nghệ và kỹ năng đã áp dụng.</p>
-        <button class="view-btn" onclick="openProjectDetail(1)">Xem chi tiết</button>
+        <h3>MÔ HÌNH RA QUYẾT ĐỊNH</h3>
+        <p>ỨNG DỤNG MÔ HÌNH AHP ĐỐI VỚI SỐ MỜ TRONG VIỆC RA QUYẾT
+ĐỊNH LỰA CHỌN SÀN THƯƠNG MẠI ĐIỆN TỬ CỦA NGƯỜI TIÊU
+DÙNG VIỆT NAM</p>
+        <button class="view-btn" onclick="openProjectDetail1()">Xem chi tiết</button>
         </div>
 
         <div class="project-card">
         <img src="./imgs/power_bi_logo1.png" alt="Project 2">
-        <h3>Tên Dự Án 2</h3>
-        <p>Mô tả ngắn gọn về dự án này, thể hiện các công nghệ và kỹ năng đã áp dụng.</p>
-        <button class="view-btn" onclick="openProjectDetail(2)">Xem chi tiết</button>
+        <h3>ĐÀO TẠO VÀ PHÁT TRIỂN NGUỒN NHÂN LỰC</h3>
+        <p>ĐÁNH GIÁ HIỆU QUẢ ĐÀO TẠO
+NHÂN LỰC TẠI CÔNG TY CỔ PHẦN BƯU CHÍNH VIETTEL</p>
+        <button class="view-btn" onclick="openProjectDetail2()">Xem chi tiết</button>
         </div>
 
         <div class="project-card">
         <img src="./imgs/canva_logo1.jpeg" alt="Project 3">
-        <h3>Tên Dự Án 3</h3>
-        <p>Mô tả ngắn gọn về dự án này, thể hiện các công nghệ và kỹ năng đã áp dụng.</p>
-        <button class="view-btn" onclick="openProjectDetail(3)">Xem chi tiết</button>
+        <h3>CÁC YẾU TỐ ẢNH HƯỞNG ĐẾN QUYẾT ĐỊNH</h3>
+        <p>CÁC YẾU TỐ ẢNH HƯỞNG ĐẾN QUYẾT ĐỊNH
+SỬ DỤNG NGÂN HÀNG SỐ CỦA KHÁCH HÀNG TẠI NGÂN
+HÀNG THƯƠNG MẠI CỔ PHẦN CÔNG THƯƠNG VIỆT
+NAM - VIETINBANK TRÊN ĐỊA BÀN HÀ NỘI.</p>
+        <button class="view-btn" onclick="openProjectDetail3()">Xem chi tiết</button>
         </div>
 
         <div class="project-card">
         <img src="./imgs/logo_capcut.jpeg" alt="Project 3">
-        <h3>Tên Dự Án 4</h3>
-        <p>Mô tả ngắn gọn về dự án này, thể hiện các công nghệ và kỹ năng đã áp dụng.</p>
-        <button class="view-btn" onclick="openProjectDetail(4)">Xem chi tiết</button>
+        <h3>CÁC YẾU TỐ ẢNH HƯỞNG ĐẾN Ý ĐỊNH SỬ DỤNG CHATBOT</h3>
+        <p>CÁC YẾU TỐ ẢNH HƯỞNG ĐẾN Ý ĐỊNH SỬ DỤNG
+CHATBOT CỦA KHÁCH HÀNG TẠI CÁC NGÂN HÀNG
+THƯƠNG MẠI VIỆT NAM.</p>
+        <button class="view-btn" onclick="openProjectDetail4()">Xem chi tiết</button>
         </div>
     </div>
     </div>
-
-
     <button class="carousel-btn next">❯</button>
   </div>
 </section>
@@ -231,10 +235,498 @@ function showSlide(index) {
 showSlide(current);
 
   // === Modal xem chi tiết ===
-  function openProjectDetail(id) {
+  // function openProjectDetail(id) {
+  //   const detailBox = document.getElementById('project-detail');
+  //   detailBox.innerHTML = `<h2>Chi tiết Dự án ${id}</h2>
+  //     <p>Nội dung chi tiết về dự án ${id} sẽ được hiển thị ở đây...</p>`;
+  //   document.getElementById('project-modal').style.display = 'flex';
+  // }
+  function openProjectDetail1() {
     const detailBox = document.getElementById('project-detail');
-    detailBox.innerHTML = `<h2>Chi tiết Dự án ${id}</h2>
-      <p>Nội dung chi tiết về dự án ${id} sẽ được hiển thị ở đây...</p>`;
+    detailBox.innerHTML = `<h2>Chi tiết Dự án MÔ HÌNH RA QUYẾT ĐỊNH </h2>
+      <p>Nội dung chi tiết về dự án:
+        📝 1. Ý nghĩa nghiên cứu
+
+Bối cảnh:
+Đại dịch COVID-19 đã thay đổi mạnh mẽ hành vi tiêu dùng. Việc giãn cách xã hội khiến người tiêu dùng chuyển từ hình thức mua sắm truyền thống sang trực tuyến. Thương mại điện tử Việt Nam bùng nổ, với doanh số quý II/2024 trên 5 sàn lớn đạt 84,87 nghìn tỷ đồng (tăng 19,2% so với quý I).
+
+Vấn đề đặt ra:
+Sự xuất hiện ồ ạt của nhiều sàn thương mại điện tử khiến người tiêu dùng gặp khó khăn trong việc ra quyết định lựa chọn nền tảng phù hợp.
+
+Ý nghĩa học thuật & thực tiễn:
+
+Hệ thống hóa cơ sở lý luận và tổng quan nghiên cứu về các yếu tố ảnh hưởng đến quyết định lựa chọn sàn TMĐT.
+
+Ứng dụng phương pháp ra quyết định đa tiêu chí AHP với số mờ để đánh giá, xếp hạng sàn TMĐT tại Việt Nam.
+
+Đưa ra hàm ý cho doanh nghiệp nhằm nâng cao chất lượng dịch vụ, tối ưu trải nghiệm khách hàng, góp phần thúc đẩy phát triển TMĐT và kinh tế số.
+<br>
+🎯 2. Mục tiêu nghiên cứu
+
+Mục tiêu chung:
+Ứng dụng mô hình AHP (Analytic Hierarchy Process) với số mờ để giúp người tiêu dùng lựa chọn sàn TMĐT phù hợp và giúp các nhà quản trị hiểu rõ yếu tố cạnh tranh cốt lõi của sàn mình.
+
+Mục tiêu cụ thể:
+
+Xác định các yếu tố ảnh hưởng đến quyết định lựa chọn sàn TMĐT.
+
+Đánh giá mức độ quan trọng của từng yếu tố.
+
+Xếp hạng các sàn TMĐT theo mức độ phù hợp.
+
+Đề xuất giải pháp nâng cao chất lượng dịch vụ và năng lực cạnh tranh cho các sàn TMĐT.
+<br>
+🧪 3. Phương pháp nghiên cứu
+
+Mô hình & công cụ:
+
+Phương pháp ra quyết định đa tiêu chí MCDM.
+
+Ứng dụng mô hình AHP số mờ (Fuzzy AHP) – phương pháp của Chang (1996).
+
+Quy trình 7 bước:
+
+Xác định các lựa chọn sàn TMĐT tiềm năng (A1–Lazada, A2–Shopee, A3–Tiki, A4–Sendo).
+
+Thành lập hội đồng ra quyết định (3 chuyên gia: người tiêu dùng, nhà báo, chuyên gia thị trường).
+
+Xác định bộ tiêu chí đánh giá:
+
+C1: Hình thức
+
+C2: Chất lượng sản phẩm
+
+C3: Vận chuyển
+
+C4: Dịch vụ chăm sóc khách hàng
+
+C5: Sự đa dạng ngành hàng
+
+Xác định trọng số của các tiêu chí qua so sánh cặp.
+
+Xây dựng ma trận so sánh mờ.
+
+Tính toán trọng số tổng hợp và giá trị Si.
+
+Đánh giá & xếp hạng các sàn theo trọng số tiêu chí.
+
+Đối tượng khảo sát:
+
+3 chuyên gia có kiến thức chuyên sâu.
+
+Dữ liệu được xử lý bằng bảng hỏi và thang đo ngôn ngữ mờ (từ “rất kém” đến “rất quan trọng”).
+<br>
+📊 4. Kết quả nghiên cứu
+
+Trọng số tiêu chí:
+Sau tính toán Fuzzy AHP, các trọng số được sắp xếp từ cao đến thấp như sau:
+
+C2 (Chất lượng sản phẩm) ≈ 0,30–0,47 → quan trọng nhất.
+
+C1 (Hình thức) ≈ 0,18–0,45
+
+C3 (Vận chuyển) ≈ 0,10–0,23
+
+C4 (CSKH) ≈ 0,09–0,22
+
+C5 (Đa dạng ngành hàng) ≈ 0,07–0,19 → thấp nhất.
+
+Xếp hạng sàn TMĐT:
+Thông qua tổng hợp trọng số và đánh giá chuyên gia, kết quả xếp hạng như sau:
+
+Shopee (A2) → được đánh giá cao nhất nhờ hình thức thân thiện, dịch vụ đa dạng, tốc độ xử lý tốt.
+
+Tiki (A3) → nổi bật về chất lượng sản phẩm và dịch vụ giao hàng.
+
+Lazada (A1) → mạnh về giao diện và chiến dịch marketing nhưng yếu hơn về trải nghiệm khách hàng.
+
+Sendo (A4) → thấp nhất do hạn chế về ngành hàng và trải nghiệm.
+
+Đánh giá:
+
+Yếu tố chất lượng sản phẩm là yếu tố quyết định hàng đầu.
+
+Hình thức và dịch vụ hậu cần đóng vai trò quan trọng thứ hai.
+
+Sự đa dạng ngành hàng có tác động nhưng không phải là yếu tố quyết định.<br>
+
+🧭 5. Ứng dụng kết quả nghiên cứu
+
+Đối với người tiêu dùng:
+
+Có cơ sở khoa học, rõ ràng để lựa chọn sàn TMĐT phù hợp với nhu cầu mua sắm.
+
+Giảm thời gian tìm kiếm, tăng hiệu quả mua hàng.
+
+Đối với doanh nghiệp/sàn TMĐT:
+
+Biết được yếu tố nào ảnh hưởng mạnh nhất đến quyết định mua hàng để tập trung nguồn lực.
+
+Cải thiện chất lượng sản phẩm, dịch vụ chăm sóc khách hàng và giao diện người dùng để tăng năng lực cạnh tranh.
+
+Áp dụng phương pháp AHP số mờ cho các bài toán ra quyết định khác (lựa chọn nhà cung cấp, chiến lược marketing,…).
+
+Đối với cơ quan quản lý:
+
+Có thể tham khảo mô hình ra quyết định này để đánh giá, xếp hạng hoặc hỗ trợ chính sách phát triển TMĐT.
+
+Góp phần định hướng thị trường minh bạch, cạnh tranh lành mạnh.</p>`;
+    document.getElementById('project-modal').style.display = 'flex';
+  }
+  
+  function openProjectDetail2() {
+    const detailBox = document.getElementById('project-detail');
+    detailBox.innerHTML = `<h2>Chi tiết Dự án số 2</h2>
+      <p>Nội dung chi tiết <br>📝 1. Ý nghĩa nghiên cứu
+
+Bối cảnh:
+Trong thời kỳ hội nhập và chuyển đổi số, cạnh tranh giữa các doanh nghiệp ngày càng gay gắt. Nguồn nhân lực trở thành yếu tố then chốt quyết định sự phát triển bền vững. Do đó, các doanh nghiệp cần nâng cao chất lượng nhân lực thông qua các chương trình đào tạo hiệu quả.
+
+Vai trò của đánh giá đào tạo:
+Đánh giá hiệu quả đào tạo là bước cuối cùng nhưng rất quan trọng trong quy trình đào tạo. Nó giúp doanh nghiệp xác định liệu chương trình đào tạo có thực sự mang lại giá trị, từ đó điều chỉnh nội dung, phương pháp phù hợp hơn cho các đợt sau.
+
+Ý nghĩa thực tiễn:
+Viettel Post là doanh nghiệp hàng đầu trong lĩnh vực bưu chính, sở hữu mạng lưới rộng khắp toàn quốc. Để duy trì uy tín, công ty chú trọng đào tạo và phát triển nhân lực. Nghiên cứu này có ý nghĩa giúp công ty hoàn thiện quy trình đánh giá hiệu quả đào tạo nhằm nâng cao chất lượng nguồn nhân lực, tăng năng suất và khả năng cạnh tranh.
+<br>
+🎯 2. Mục tiêu nghiên cứu
+
+Mục tiêu chung:
+Phân tích thực trạng đánh giá hiệu quả đào tạo nguồn nhân lực tại Viettel Post dựa trên mô hình Kirkpatrick 4 cấp độ, từ đó đề xuất giải pháp hoàn thiện.
+
+Mục tiêu cụ thể:
+
+Hệ thống hóa cơ sở lý luận về đào tạo và đánh giá hiệu quả đào tạo nhân lực.
+
+Phân tích thực trạng hoạt động đánh giá hiệu quả đào tạo tại Viettel Post.
+
+Đánh giá hiệu quả đào tạo theo 4 cấp độ của mô hình Kirkpatrick.
+
+Đề xuất giải pháp hoàn thiện công tác đánh giá đào tạo nhằm nâng cao chất lượng nhân lực.
+<br>
+🧪 3. Phương pháp nghiên cứu
+
+Phương pháp lý thuyết:
+
+Tổng hợp tài liệu từ giáo trình, nghiên cứu trong nước, quốc tế về quản trị nhân lực và mô hình Kirkpatrick.
+
+Xây dựng khung lý thuyết gồm: khái niệm nhân lực, đào tạo, hiệu quả đào tạo và 4 cấp độ Kirkpatrick (Phản ứng – Học tập – Hành vi – Kết quả).
+
+Phương pháp thực tiễn:
+
+Khảo sát 20 lao động tham gia đào tạo để đánh giá phản ứng, sự hài lòng.
+
+Sử dụng số liệu thứ cấp từ Báo cáo thường niên 2023 của Viettel Post để phân tích cấp độ học tập, hành vi và kết quả.
+
+Phân tích định tính & định lượng: thống kê mô tả kết quả phiếu khảo sát, phân tích bảng biểu, báo cáo nội bộ.
+
+Đối tượng & phạm vi:
+
+Tổng Công ty Cổ phần Bưu chính Viettel.
+
+Các chương trình đào tạo nội bộ giai đoạn 2021–2023.
+
+Tập trung vào công tác đánh giá hiệu quả sau đào tạo.
+<br>
+📊 4. Kết quả nghiên cứu
+4.1. Thực trạng đào tạo tại Viettel Post
+
+Năm 2023, công ty áp dụng công nghệ 4.0 vào đào tạo (Elearning, Zoom, By Day Learning…).
+
+221 bài giảng số đã được xây dựng, 129 khóa đào tạo tổ chức cho toàn bộ nhân viên với tổng thời gian 120.332 giờ.
+
+Đào tạo tập trung vào cán bộ quản lý, vận hành logistics, văn hóa doanh nghiệp và hội nhập nhân viên mới.
+
+4.2. Đánh giá theo mô hình Kirkpatrick
+
+Cấp độ 1 – Phản ứng:
+
+Nhân viên nhìn chung hài lòng với chương trình đào tạo, giảng viên và nội dung môn học.
+
+Tuy nhiên, cơ sở vật chất, trang thiết bị và khu để xe còn hạn chế → cần cải thiện để tăng trải nghiệm học tập.
+
+Cấp độ 2 – Học tập:
+
+109 kỳ thi với 211.227 lượt thi, tỷ lệ đạt trung bình 93,7%.
+
+Nhân viên tiếp thu tốt, số lượng tham gia đông, nhưng đánh giá vẫn chủ yếu dựa vào kết quả thi, chưa đo lường toàn diện sự thay đổi nhận thức.
+
+Cấp độ 3 – Hành vi:
+
+75% nhân viên cho rằng nội dung đào tạo phù hợp hoặc áp dụng tốt vào thực tế công việc.
+
+Công ty chưa thực hiện đánh giá hành vi bài bản sau 2–3 tháng → thiếu dữ liệu về thay đổi hành vi dài hạn.
+
+Cấp độ 4 – Kết quả:
+
+Tỷ lệ nghỉ việc giảm 14,6% năm 2023 → dấu hiệu tích cực từ đào tạo.
+
+Tuy nhiên doanh thu giảm nhẹ (21.628 → 19.587 tỷ VND), công ty chưa phân tích sâu mối quan hệ giữa đào tạo và hiệu quả kinh doanh.
+
+Đánh giá kết quả còn hạn chế về phạm vi, chưa áp dụng đầy đủ các chỉ tiêu đo lường.
+<br>
+🧭 5. Ứng dụng kết quả nghiên cứu
+
+Đối với doanh nghiệp:
+
+Nâng cao chất lượng đánh giá đào tạo bằng cách áp dụng đầy đủ 4 cấp độ Kirkpatrick.
+
+Tăng cường khảo sát, đo lường hành vi sau đào tạo 2–3 tháng để có dữ liệu thực chất.
+
+Gắn kết quả đào tạo với các chỉ số hiệu suất (KPIs), tỷ lệ nghỉ việc, năng suất, doanh thu.
+
+Đầu tư cơ sở vật chất, trang thiết bị học tập hiện đại để nâng cao trải nghiệm đào tạo.
+
+Giải pháp đề xuất cụ thể:
+
+Về tổ chức: thành lập ban chuyên trách đào tạo trực thuộc công ty.
+
+Về tài chính: tối ưu phân bổ ngân sách đào tạo, theo dõi chi phí – lợi ích.
+
+Về khen thưởng: xây dựng chính sách thưởng – phạt rõ ràng cho người học sau đào tạo.
+
+Về đánh giá: thiết lập hệ thống chỉ tiêu đánh giá cho từng cấp độ, sử dụng phương pháp điều tra, phỏng vấn, kiểm tra, quan sát, SPSS/Excel xử lý dữ liệu.</p>`;
+    document.getElementById('project-modal').style.display = 'flex';
+  }
+
+  function openProjectDetail3(id=3) {
+    const detailBox = document.getElementById('project-detail');
+    detailBox.innerHTML = `<h2>Chi tiết Dự án CÁC YẾU TỐ ẢNH HƯỞNG ĐẾN QUYẾT ĐỊNH</h2>
+      <p>Nội dung chi tiết <br>📝 1. Ý nghĩa nghiên cứu
+
+Bối cảnh chuyển đổi số ngành ngân hàng:
+Cuộc cách mạng công nghiệp 4.0 thúc đẩy các ngân hàng Việt Nam đẩy mạnh chuyển đổi số nhằm nâng cao năng lực cạnh tranh, giảm chi phí vận hành, mở rộng thị phần và đáp ứng nhu cầu người tiêu dùng ngày càng đa dạng. Ngân hàng số trở thành xu hướng tất yếu, mang lại tiện ích vượt trội cho khách hàng: thực hiện giao dịch mọi lúc, mọi nơi, tiết kiệm thời gian và chi phí.
+
+Thực trạng tại VietinBank:
+Là một trong những ngân hàng tiên phong về số hóa, VietinBank đã ra mắt dịch vụ Mobile Banking từ năm 2013, đến nay ứng dụng VietinBank iPay Mobile có gần 7,8 triệu người dùng, chiếm 91,6% tổng giao dịch cá nhân. Tuy nhiên, VietinBank vẫn đối mặt với thách thức về mức độ cạnh tranh, trải nghiệm người dùng và khả năng tạo khác biệt so với các ngân hàng khác.
+
+Ý nghĩa nghiên cứu:
+
+Về khoa học: Bổ sung bằng chứng thực nghiệm cho các mô hình lý thuyết hành vi (TRA, TPB, TAM, UTAUT) trong bối cảnh ngân hàng số tại Việt Nam.
+
+Về thực tiễn: Xác định các yếu tố then chốt ảnh hưởng đến quyết định sử dụng ngân hàng số của khách hàng, từ đó đề xuất giải pháp giúp VietinBank tăng cường thu hút và giữ chân khách hàng.
+<br>
+🎯 2. Mục tiêu nghiên cứu
+
+Mục tiêu chung:
+Xác định và đánh giá các yếu tố ảnh hưởng đến quyết định sử dụng ngân hàng số của khách hàng tại VietinBank, từ đó đưa ra giải pháp nhằm phát triển mạnh mẽ dịch vụ ngân hàng số trong giai đoạn tới.
+
+Mục tiêu cụ thể:
+
+Hệ thống hóa cơ sở lý luận và tổng quan nghiên cứu về hành vi sử dụng ngân hàng số.
+
+Phân tích thực trạng phát triển ngân hàng số tại VietinBank.
+
+Xác định các yếu tố ảnh hưởng đến quyết định sử dụng dịch vụ ngân hàng số của khách hàng VietinBank tại Hà Nội.
+
+Đo lường mức độ ảnh hưởng của từng yếu tố và kiểm định mô hình lý thuyết.
+
+Đề xuất giải pháp, kiến nghị nhằm hoàn thiện phát triển ngân hàng số VietinBank.
+<br>
+🧪 3. Phương pháp nghiên cứu
+
+Mô hình nghiên cứu:
+Dựa trên mô hình TAM (Davis, 1989) và các nghiên cứu kế thừa, tác giả đề xuất mô hình gồm 6 yếu tố ảnh hưởng đến quyết định sử dụng ngân hàng số:
+
+Nhận thức hữu ích (HI)
+
+Nhận thức dễ sử dụng (SD)
+
+Nhận thức riêng tư / bảo mật (BM)
+
+Cảm nhận chi phí (CP)
+
+Ảnh hưởng xã hội (XH)
+
+Sự hài lòng của khách hàng (HL) – yếu tố trung gian.
+
+Quy trình nghiên cứu:
+
+Xác định vấn đề, mục tiêu, câu hỏi nghiên cứu.
+
+Tổng hợp lý thuyết & đề xuất mô hình.
+
+Nghiên cứu định tính: Phỏng vấn sâu 10 khách hàng VietinBank → hiệu chỉnh thang đo.
+
+Nghiên cứu định lượng: Phát bảng hỏi chính thức.
+
+Thu thập dữ liệu, xử lý bằng PLS-SEM (Partial Least Squares Structural Equation Modeling).
+
+Đánh giá mô hình đo lường → mô hình cấu trúc → kiểm định giả thuyết.
+
+Kết luận, kiến nghị.
+
+Thiết kế bảng hỏi & mẫu:
+
+Sử dụng thang đo Likert 5 mức.
+
+Thang đo kế thừa từ các nghiên cứu quốc tế & trong nước.
+
+Phân tích độ tin cậy, giá trị hội tụ – phân biệt trước khi chạy mô hình PLS-SEM.
+<br>
+📊 4. Kết quả nghiên cứu
+4.1. Tổng quan ngân hàng số VietinBank
+
+VietinBank cung cấp đa dạng dịch vụ số: iPay, iPay Mobile, SMS Banking, Bankplus, Efast (cho KHDN).
+
+Số lượng người dùng tăng nhanh, dịch vụ số chiếm tỷ trọng giao dịch rất cao. Tuy nhiên, còn hạn chế trong cải thiện trải nghiệm, bảo mật, tốc độ đổi mới.
+
+4.2. Phân tích mô hình đo lường và cấu trúc
+
+Các thang đo đạt độ tin cậy cao (Cronbach’s Alpha > 0,7).
+
+Phân tích nhân tố khám phá (EFA) & khẳng định (CFA) cho thấy các biến quan sát tải đúng nhân tố.
+
+Mô hình PLS-SEM đạt độ phù hợp tốt, không vi phạm đa cộng tuyến (Inner VIF < 5).
+
+4.3. Kiểm định giả thuyết
+
+H1: Nhận thức hữu ích → Sự hài lòng: ✅ chấp nhận (tác động mạnh nhất).
+
+H2: Nhận thức dễ sử dụng → Sự hài lòng: ✅ chấp nhận.
+
+H3: Nhận thức bảo mật → Sự hài lòng: ✅ chấp nhận.
+
+H4: Cảm nhận chi phí → Sự hài lòng: ✅ chấp nhận.
+
+H5: Ảnh hưởng xã hội → Sự hài lòng: ✅ chấp nhận.
+
+H6: Sự hài lòng → Quyết định sử dụng: ✅ chấp nhận (ảnh hưởng mạnh).
+
+➡️ Sự hài lòng đóng vai trò trung gian, chịu ảnh hưởng trực tiếp của 5 yếu tố và tác động mạnh mẽ đến quyết định sử dụng ngân hàng số.
+<br>
+🧭 5. Ứng dụng kết quả nghiên cứu
+
+Đối với VietinBank:
+
+Tập trung nâng cao tính hữu ích của dịch vụ: mở rộng tính năng, tích hợp tiện ích thanh toán – đầu tư – bảo hiểm.
+
+Tăng cường trải nghiệm người dùng: giao diện thân thiện, đơn giản, hỗ trợ nhanh.
+
+Đảm bảo an toàn – bảo mật dữ liệu, truyền thông rõ ràng về chính sách bảo vệ người dùng.
+
+Chính sách phí hợp lý, minh bạch để tăng sự hài lòng.
+
+Tận dụng ảnh hưởng xã hội (marketing, giới thiệu, cộng đồng người dùng) để lan tỏa dịch vụ.
+
+Đối với nhà nghiên cứu & quản lý:
+
+Mô hình có thể áp dụng để phân tích các yếu tố quyết định sử dụng dịch vụ số trong ngành tài chính – ngân hàng nói chung.
+
+Kết quả là cơ sở để hoạch định chiến lược chuyển đổi số gắn với trải nghiệm khách hàng.</p>`;
+    document.getElementById('project-modal').style.display = 'flex';
+  }
+
+  function openProjectDetail4() {
+    const detailBox = document.getElementById('project-detail');
+    detailBox.innerHTML = `<h2>Chi tiết Dự án CÁC YẾU TỐ ẢNH HƯỞNG ĐẾN Ý ĐỊNH SỬ DỤNG CHATBOT</h2>
+      <p>Nội dung chi tiết <br>
+        📝 1. Ý nghĩa nghiên cứu
+
+Bối cảnh:
+Trong kỷ nguyên số, ngân hàng số (Digital Banking) trở thành xu hướng tất yếu trong hoạt động ngân hàng toàn cầu. Tại Việt Nam, quá trình chuyển đổi số diễn ra mạnh mẽ với sự tham gia của các ngân hàng thương mại lớn. Ngân hàng số giúp mở rộng kênh phân phối, giảm chi phí vận hành, nâng cao trải nghiệm khách hàng và tạo lợi thế cạnh tranh.
+
+Tình hình BIDV Quang Trung:
+Là một trong những chi nhánh trọng điểm của BIDV, BIDV Quang Trung đã triển khai nhiều dịch vụ ngân hàng số như Internet Banking, Mobile Banking, SmartBanking, BIDV iBank, QR Pay,… Tuy nhiên, trong quá trình thực hiện vẫn tồn tại một số hạn chế về chất lượng dịch vụ như: tốc độ xử lý giao dịch, ổn định hệ thống, hỗ trợ khách hàng, trải nghiệm người dùng… dẫn đến mức độ hài lòng của khách hàng chưa cao.
+
+Ý nghĩa nghiên cứu:
+
+Về lý luận: Góp phần hệ thống hóa cơ sở lý thuyết về chất lượng dịch vụ ngân hàng số, các mô hình đánh giá chất lượng phổ biến (SERVQUAL, E-SERVQUAL, E-SQ, UTAUT…).
+
+Về thực tiễn: Đưa ra bức tranh toàn diện về thực trạng chất lượng dịch vụ ngân hàng số tại BIDV Quang Trung, từ đó đề xuất giải pháp nâng cao chất lượng dịch vụ nhằm tăng sự hài lòng và lòng trung thành của khách hàng.
+<br>
+🎯 2. Mục tiêu nghiên cứu
+
+Mục tiêu chung:
+Đề xuất các giải pháp nâng cao chất lượng dịch vụ ngân hàng số tại BIDV Quang Trung, góp phần gia tăng sự hài lòng của khách hàng, thu hút khách hàng mới và giữ chân khách hàng hiện hữu.
+
+Mục tiêu cụ thể:
+
+Hệ thống hóa cơ sở lý luận về ngân hàng số và chất lượng dịch vụ ngân hàng số.
+
+Phân tích thực trạng chất lượng dịch vụ ngân hàng số tại BIDV Quang Trung.
+
+Đánh giá các yếu tố ảnh hưởng đến chất lượng dịch vụ theo mô hình lý thuyết.
+
+Đề xuất các giải pháp cụ thể nhằm nâng cao chất lượng dịch vụ ngân hàng số tại chi nhánh.
+<br>
+🧪 3. Phương pháp nghiên cứu
+
+Cơ sở lý thuyết:
+
+Áp dụng mô hình SERVQUAL mở rộng (Parasuraman et al., 1988) và các nghiên cứu kế thừa để đánh giá chất lượng dịch vụ ngân hàng số theo các tiêu chí:
+
+Độ tin cậy (Reliability)
+
+Mức độ đáp ứng (Responsiveness)
+
+Năng lực phục vụ (Assurance)
+
+Sự đồng cảm (Empathy)
+
+Phương tiện hữu hình & công nghệ (Tangibles).
+
+Bổ sung yếu tố “Dễ sử dụng” và “Bảo mật” phù hợp với đặc thù dịch vụ số.
+
+Phương pháp thu thập dữ liệu:
+
+Số liệu thứ cấp: báo cáo nội bộ, kế hoạch chuyển đổi số của BIDV, số liệu kinh doanh chi nhánh 2021–2023.
+
+Số liệu sơ cấp: khảo sát 120 khách hàng đang sử dụng dịch vụ ngân hàng số BIDV Quang Trung thông qua bảng hỏi Likert 5 mức độ.
+
+Phỏng vấn sâu 3 chuyên viên và 2 quản lý chi nhánh để làm rõ thực trạng triển khai dịch vụ.
+
+Phương pháp xử lý:
+
+Kiểm định độ tin cậy Cronbach’s Alpha, phân tích EFA, hồi quy tuyến tính đa biến để xác định mức độ ảnh hưởng của các nhân tố.
+
+Phân tích định tính kết hợp định lượng nhằm đánh giá khách quan.
+<br>
+📊 4. Kết quả nghiên cứu
+4.1. Thực trạng dịch vụ ngân hàng số tại BIDV Quang Trung
+
+BIDV đẩy mạnh chuyển đổi số toàn hệ thống, tập trung vào BIDV SmartBanking.
+
+Số lượng người dùng dịch vụ số tăng nhanh, nhưng tỷ lệ giao dịch thành công chưa đạt mức kỳ vọng.
+
+Nhiều khách hàng phản ánh về việc hệ thống thỉnh thoảng lỗi, tốc độ phản hồi chậm trong giờ cao điểm, quy trình hỗ trợ khách hàng còn thủ công.
+
+4.2. Kết quả khảo sát khách hàng
+
+Độ tin cậy: được đánh giá cao nhất → BIDV có nền tảng thương hiệu uy tín, giao dịch phần lớn chính xác.
+
+Dễ sử dụng & Giao diện: đạt mức khá → người dùng đánh giá ứng dụng tương đối thân thiện, nhưng còn rườm rà ở một số tính năng.
+
+Tốc độ phản hồi & hỗ trợ khách hàng: còn yếu, đặc biệt ở khâu xử lý sự cố.
+
+Bảo mật & an toàn thông tin: được khách hàng đánh giá tích cực nhưng vẫn mong muốn xác thực nhanh hơn.
+
+Sự đồng cảm & chăm sóc khách hàng: còn hạn chế, thiếu cá nhân hóa trải nghiệm.
+
+4.3. Phân tích hồi quy
+
+Các yếu tố Độ tin cậy, Dễ sử dụng, Bảo mật, và Phản hồi nhanh có ảnh hưởng tích cực & có ý nghĩa thống kê đến sự hài lòng của khách hàng.
+
+Trong đó, Độ tin cậy là yếu tố tác động mạnh nhất (β ≈ 0,35), kế đến là Dễ sử dụng (β ≈ 0,27).
+<br>
+🧭 5. Ứng dụng kết quả nghiên cứu
+
+Đối với BIDV Quang Trung:
+
+Đảm bảo độ tin cậy hệ thống: nâng cấp hạ tầng công nghệ, giảm thiểu lỗi giao dịch.
+
+Tối ưu trải nghiệm người dùng: đơn giản hóa giao diện, rút gọn quy trình thao tác, cải thiện tốc độ phản hồi.
+
+Tăng cường bảo mật: ứng dụng xác thực sinh trắc học, mã hóa nhiều lớp nhưng vẫn đảm bảo tiện lợi.
+
+Nâng cao chất lượng hỗ trợ khách hàng: thiết lập trung tâm hỗ trợ 24/7, chatbot thông minh, quy trình xử lý sự cố nhanh.
+
+Đào tạo nhân viên: nâng cao năng lực tư vấn, hỗ trợ dịch vụ số cho khách hàng lớn tuổi và ít am hiểu công nghệ.
+
+Đối với ngân hàng BIDV nói chung:
+
+Mô hình đánh giá có thể áp dụng mở rộng cho các chi nhánh khác.
+
+Kết quả nghiên cứu là cơ sở xây dựng chiến lược nâng cao chất lượng dịch vụ ngân hàng số giai đoạn 2025–2030.</p>`;
     document.getElementById('project-modal').style.display = 'flex';
   }
 
@@ -250,38 +742,38 @@ showSlide(current);
 
     <div class="blog-container">
     <div class="blog-item" style="--img:url('./imgs/IMG_8807.JPG')"  
-      data-title="Học lập trình từ con số 0" data-content="Bắt đầu với HTML, CSS, và Python, tôi đã tự xây dựng nền tảng vững chắc để phát triển ứng dụng thực tế.">
+      data-title="Nghiên cứu khoa học dưới sự dẫn dắt của thầy cô" data-content="Tại Đại học Kinh tế – ĐHQGHN, nghiên cứu khoa học không chỉ dành cho những “mọt sách” mà là một hành trình khám phá chính bản thân. Từ những buổi brainstorming đầy sôi nổi, những trang tài liệu được gạch chú chi chít, cho tới khoảnh khắc đề tài được chấp thuận — sinh viên bắt đầu học cách đặt câu hỏi đúng, tư duy phản biện và tìm lời giải cho những vấn đề thực tiễn. Dưới sự dẫn dắt của các thầy cô, mỗi đề tài không chỉ là một bản báo cáo, mà là kết tinh của đam mê, nỗ lực và trí tuệ tuổi trẻ.">
       <div class="blog-img" aria-hidden="true"></div>
       <div class="blog-inner">
-        <h3>Lập trình</h3>
-        <p>Khởi đầu vững chắc</p>
+        <h3>Nghiên cứu khoa học</h3>
+        <p>Hành trình trưởng thành của tư duy</p>
       </div>
     </div>
     
     <div class="blog-item" style="--img:url('./imgs/IMG_8781.JPG')"
-      data-title="Thiết kế trải nghiệm người dùng" data-content="Một giao diện đẹp chỉ là phần nổi. Điều quan trọng là cách người dùng cảm thấy khi sử dụng sản phẩm.">
+      data-title="Tư duy thiết kế & Đổi mới sáng tạo" data-content="Trong thời đại số, một nhà quản trị không chỉ biết lập kế hoạch hay đọc báo cáo tài chính. Họ cần tư duy thiết kế (design thinking) để hiểu sâu khách hàng, tạo ra những sản phẩm – dịch vụ thực sự chạm tới cảm xúc người dùng. Ở UEB, sinh viên được khuyến khích nhìn thế giới bằng đôi mắt tò mò, thách thức những lối mòn và kiến tạo giải pháp mới. Từ những workshop sáng tạo cho tới các cuộc thi ý tưởng khởi nghiệp, mỗi sinh viên đều có cơ hội rèn luyện khả năng quan sát, phân tích và sáng tạo như một “nhà đổi mới” thực thụ.">
       <div class="blog-img" aria-hidden="true"></div>
       <div class="blog-inner">
-        <h3>UI/UX</h3>
-        <p>Trải nghiệm là tất cả</p>
+        <h3>Tư duy thiết kế & Đổi mới sáng tạo</h3>
+        <p>Nền tảng của người làm quản trị hiện đại</p>
       </div>
     </div>
     
     <div class="blog-item" style="--img:url('./imgs/IMG_8821.JPG')"
-      data-title="Câu chuyện teamwork" data-content="Làm việc nhóm là nghệ thuật của sự lắng nghe, chia sẻ, và trách nhiệm với mục tiêu chung.">
+      data-title="Câu chuyện teamwork" data-content="Trong môi trường đại học năng động, teamwork không chỉ là kỹ năng, mà là một năng lực cốt lõi. Làm việc nhóm tại UEB là nơi những phong cách khác nhau va chạm, để rồi học cách lắng nghe, thấu hiểu và dung hòa. Có nhóm học cách quản lý thời gian, có nhóm học cách giải quyết xung đột, có nhóm tìm ra sức mạnh từ chính sự khác biệt. Qua từng dự án, sinh viên không chỉ hoàn thành bài tập — họ học cách lãnh đạo, hợp tác và cùng nhau tạo nên giá trị vượt xa một điểm số.">
       <div class="blog-img" aria-hidden="true"></div>
       <div class="blog-inner">
         <h3>Teamwork</h3>
-        <p>Hiểu – Giao tiếp – Hợp tác</p>
+        <p>Sức mạnh của những cái đầu cùng hướng về một mục tiêu</p>
       </div>
     </div>
     
     <div class="blog-item" style="--img:url('./imgs/IMG_8793.JPG')" 
-      data-title="Ứng dụng AI trong cuộc sống" data-content="Trí tuệ nhân tạo không còn xa lạ. Nó đang từng ngày thay đổi cách ta làm việc và sáng tạo.">
+      data-title="Ứng dụng AI trong cuộc sống" data-content="Không còn là khái niệm xa vời, công nghệ và trí tuệ nhân tạo đã trở thành “trợ lý đắc lực” của sinh viên quản trị. Từ việc khai thác dữ liệu thị trường, phân tích hành vi khách hàng, dự báo xu hướng kinh doanh, cho tới tối ưu chiến lược — AI mở ra một chân trời mới cho cách tiếp cận vấn đề. Sinh viên UEB học cách không chỉ sử dụng công cụ, mà còn đặt câu hỏi thông minh, kết hợp dữ liệu với trực giác quản trị để đưa ra quyết định sắc sảo. Tương lai của ngành kinh doanh chính là sự hòa quyện giữa tư duy con người và sức mạnh công nghệ.">
       <div class="blog-img" aria-hidden="true"></div>
       <div class="blog-inner">
-        <h3>AI</h3>
-        <p>Tương lai bắt đầu từ hôm nay</p>
+        <h3>Công nghệ & AI</h3>
+        <p>Bệ phóng cho tư duy quản trị tương lai</p>
       </div>
     </div>
   </div>
