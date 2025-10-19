@@ -9,6 +9,48 @@
 </head>
 
 <body>
+  <!-- Nút bật/tắt nhạc -->
+<button id="musicToggle" style="
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #c54c60;
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 30px;
+  cursor: pointer;
+  font-size: 14px;
+  z-index: 9999;
+">
+🎵 Bật nhạc
+</button>
+
+<!-- Nhạc nền -->
+<audio id="bgMusic" loop>
+  <source src="./Enchanted.mp3" type="audio/mpeg">
+</audio>
+
+<script>
+  window.addEventListener('DOMContentLoaded', () => {
+    const music = document.getElementById('bgMusic');
+    const btn = document.getElementById('musicToggle');
+    let isPlaying = false;
+
+    btn.addEventListener('click', () => {
+      if (!isPlaying) {
+        music.play();
+        btn.textContent = '🔇 Tắt nhạc';
+      } else {
+        music.pause();
+        btn.textContent = '🎵 Bật nhạc';
+      }
+      isPlaying = !isPlaying;
+    });
+  });
+</script>
+
+
   <!-- HEADER -->
   <header>
     <h1>Trương Thị Thùy Ninh</h1>
@@ -160,7 +202,7 @@
     <div class="carousel">
     <div class="carousel-track">
         <div class="project-card active">
-        <img src="./imgs/excel_logo.png" alt="Project 1">
+        <img src="./imgs/mo-hinh-ra-quyet-dinh-dua-tren-du-lieu.jpg" alt="Project 1">
         <h3>MÔ HÌNH RA QUYẾT ĐỊNH</h3>
         <p>ỨNG DỤNG MÔ HÌNH AHP ĐỐI VỚI SỐ MỜ TRONG VIỆC RA QUYẾT
 ĐỊNH LỰA CHỌN SÀN THƯƠNG MẠI ĐIỆN TỬ CỦA NGƯỜI TIÊU
@@ -169,7 +211,7 @@ DÙNG VIỆT NAM</p>
         </div>
 
         <div class="project-card">
-        <img src="./imgs/power_bi_logo1.png" alt="Project 2">
+        <img src="./imgs/dao-tao-va-phat-trien-nguon-nhan-luc.jpg" alt="Project 2">
         <h3>ĐÀO TẠO VÀ PHÁT TRIỂN NGUỒN NHÂN LỰC</h3>
         <p>ĐÁNH GIÁ HIỆU QUẢ ĐÀO TẠO
 NHÂN LỰC TẠI CÔNG TY CỔ PHẦN BƯU CHÍNH VIETTEL</p>
@@ -177,7 +219,7 @@ NHÂN LỰC TẠI CÔNG TY CỔ PHẦN BƯU CHÍNH VIETTEL</p>
         </div>
 
         <div class="project-card">
-        <img src="./imgs/canva_logo1.jpeg" alt="Project 3">
+        <img src="./imgs/cac_yeu_to.jpeg" alt="Project 3">
         <h3>CÁC YẾU TỐ ẢNH HƯỞNG ĐẾN QUYẾT ĐỊNH</h3>
         <p>CÁC YẾU TỐ ẢNH HƯỞNG ĐẾN QUYẾT ĐỊNH
 SỬ DỤNG NGÂN HÀNG SỐ CỦA KHÁCH HÀNG TẠI NGÂN
@@ -187,7 +229,7 @@ NAM - VIETINBANK TRÊN ĐỊA BÀN HÀ NỘI.</p>
         </div>
 
         <div class="project-card">
-        <img src="./imgs/logo_capcut.jpeg" alt="Project 3">
+        <img src="./imgs/large_artificial_intelligence_ai_chat_bot_concept_e35c6172db.jpg" alt="Project 4">
         <h3>CÁC YẾU TỐ ẢNH HƯỞNG ĐẾN Ý ĐỊNH SỬ DỤNG CHATBOT</h3>
         <p>CÁC YẾU TỐ ẢNH HƯỞNG ĐẾN Ý ĐỊNH SỬ DỤNG
 CHATBOT CỦA KHÁCH HÀNG TẠI CÁC NGÂN HÀNG

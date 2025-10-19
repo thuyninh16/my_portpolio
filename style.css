@@ -607,6 +607,14 @@ section h2 {
   margin-bottom: 20px;
   min-height: 60px;
 }
+.project-card img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 15px;
+  display: block;
+  margin: 0 auto;
+  object-fit: cover;
+}
 
 .view-btn {
   background: linear-gradient(135deg, #908f94, #a855f7);
@@ -807,8 +815,8 @@ section h2 {
   .carousel-btn.next { right: -60px; }
 
   .project-card {
-    width: 400px;
-    height: 500px;
+    width: 300px;
+    height: 300px;
   }
 
   .modal-content {
@@ -833,6 +841,10 @@ section h2 {
     width: 48%;
     max-width: 350px;
     height: 500px;
+  }
+    .project-card img {
+    width: 100px;
+    height: 100px;
   }
 }
 
